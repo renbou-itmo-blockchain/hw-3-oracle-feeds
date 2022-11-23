@@ -23,6 +23,11 @@ web3.eth.subscribe(
     fromBlock: "latest",
   },
   (_, log) => {
-    console.log(`New pair update: ${log}`);
+    const current = parseInt(log.topics[1], 16);
+    const roundId = parseInt(log.topics[2], 16);
+    const updatedAt = parseInt(log.data, 16);
+    console.log(
+      `New pair update: topics=${log.topics} data=${log.data} current=${current}, roundId=${roundId} updatedAt=${updatedAt}`
+    );
   }
 );
