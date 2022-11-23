@@ -1,0 +1,19 @@
+{
+  "name": "hwk-3",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renbou-itmo-blockchain/hw-3-oracle-feeds.git"
+  },
+  "type": "module",
+  "main": "monitor.js",
+  "author": "renbou",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "@types/web3": "^1.2.2"
+  },
+  "dependencies": {
+    "web3": "^1.8.1"
+  }
+}
